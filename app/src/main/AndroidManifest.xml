@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huzaifa.firebase.h2k_price_comparer">
+
+    <application
+        android:name=".Database"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mobile_Custom_view" />
+        <activity android:name=".Samsung" />
+        <activity
+            android:name=".Admin"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Iphone" />
+        <activity android:name=".Q_mobile" />
+        <activity android:name=".Motorolla" />
+        <activity android:name=".Lg" />
+        <activity android:name=".Dell" />
+        <activity android:name=".Hp" />
+        <activity android:name=".Lenovo" />
+        <activity android:name=".Macbook" />
+        <activity android:name=".Toshiba" />
+        <activity android:name=".Laptop_Custom_View" />
+        <activity android:name=".Comparision_Custom_View" />
+    </application>
+
+</manifest>

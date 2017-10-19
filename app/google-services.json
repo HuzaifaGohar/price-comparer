@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1078733740553",
+    "firebase_url": "https://h2k-comparer.firebaseio.com",
+    "project_id": "h2k-comparer",
+    "storage_bucket": "h2k-comparer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078733740553:android:f91e5777429c0d54",
+        "android_client_info": {
+          "package_name": "com.example.huzaifa.firebase.h2k_price_comparer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078733740553-47joipcmqok1hsci43ierjmm6u6qo5ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.huzaifa.firebase.h2k_price_comparer",
+            "certificate_hash": "8204ef8f4d3e123dfde2b334589664e421913115"
+          }
+        },
+        {
+          "client_id": "1078733740553-m1o4c9chs7bmbmj7a82mcuqba988l2j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG5umTKsJEBWx0KwakKNyR9LDAqLu0YiI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078733740553-m1o4c9chs7bmbmj7a82mcuqba988l2j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

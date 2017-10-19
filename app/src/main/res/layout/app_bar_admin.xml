@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huzaifa.firebase.h2k_price_comparer.Admin">
+
+    <include layout="@layout/content_admin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout2">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/user_icon_1"
+            android:minHeight="74dp"
+            android:weightSum="1"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <SearchView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="70dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/appBarLayout2"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/topten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Ten Mobile sale In pakistan"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textColor="@color/bg_login"/>
+
+            <TextView
+                android:id="@+id/samsungs8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:text="Samsung S8"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/s8_image"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+
+                android:background="@drawable/s8"/>
+
+            <TextView
+                android:id="@+id/s8_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/samsung_s8"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/iphone_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Iphone 7"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_iphone7"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+
+                android:background="@drawable/iphone_7"/>
+
+            <TextView
+                android:id="@+id/iphone7_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/iphone_7"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/oppo_f3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Oppo F3"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_oppo_f3"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/oppo_f4"
+
+                />
+
+            <TextView
+                android:id="@+id/oppo_f3_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/oppo_f3"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/j5_pro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Samsung j5 pro"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_j5_pro"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/j5"
+
+                />
+
+            <TextView
+                android:id="@+id/j5_pro_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/j5_pro"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/Vivo_y55s"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Vivo y55s"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Vivo_y55s"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/vivo_y55s"
+
+                />
+
+            <TextView
+                android:id="@+id/Vivo_y55s_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Vivo_y55s"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Q_mobile_Z12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Q Mobile Z12"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Q_mobile_Z12"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/qmobile_z12"
+
+                />
+
+            <TextView
+                android:id="@+id/Q_mobile_Z12_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Q_mobile_Z12"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/J5_prim"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Samsung J5 prime"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_J5_prim"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/j5_prime_image"
+
+                />
+
+            <TextView
+                android:id="@+id/J5_prim_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/J5_prime"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Grand_prime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Samsung Grand prime"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Grand_prime"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/grand_prime"
+
+                />
+
+            <TextView
+                android:id="@+id/Grand_prime_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Grand_prime"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Hawai_Honor_6x"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Hawai Honor 6x"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Hawai_Honor_6x"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/hawai_6x"
+
+                />
+
+            <TextView
+                android:id="@+id/Hawai_Honor_6x_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Hawai_Honor_6x"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/oppo_A57"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="oppo A57"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_oppo_A57"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/qmobile_z12"
+
+                />
+
+            <TextView
+                android:id="@+id/oppo_A57_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/oppp_A57"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/topten_laptop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Ten Laptop sale In pakistan"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textColor="@color/bg_login"/>
+
+            <TextView
+                android:id="@+id/Envy_15"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:text="Hp Envy 15"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/Envy_15_image"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+
+                android:background="@drawable/hp_envy_15"/>
+
+            <TextView
+                android:id="@+id/Envy_15_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/Envy_15"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/Probook_450"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Hp Probook 450"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Probook_450"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+
+                android:background="@drawable/hp_probook_450"/>
+
+            <TextView
+                android:id="@+id/Probook_450_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Probook_450"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Dell_inspiron_5559"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Dell inspiron 5559"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Dell_inspiron_5559"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/laptop_dell_inspiron_5559"
+
+                />
+
+            <TextView
+                android:id="@+id/Dell_inspiron_5559_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Dell_inspiron_5559"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Lenovo_ideapad_110"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Lenovo ideapad 110"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Lenovo_ideapad_110"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/laptop_lenovo_ideapad_110"
+
+                />
+
+            <TextView
+                android:id="@+id/Lenovo_ideapad_110_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Lenovo_ideapad_110"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/Lenovo_ideapad_310"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Lenovo ideapad 310"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Lenovo_ideapad_310"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/laptop_lenovo_ideapad_310"
+
+                />
+
+            <TextView
+                android:id="@+id/Lenovo_ideapad_310_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Lenovo_ideapad_310"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Macbook_air"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Macbook Air"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Macbook_air"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/macbook_pro_15_2016"
+
+                />
+
+            <TextView
+                android:id="@+id/Macbook_air_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Macbook_air"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/latitude_6430"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Dell latitude 6430"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_latitude_6430"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/latitude_e6430s"
+
+                />
+
+            <TextView
+                android:id="@+id/latitude_6430_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/latitude_6430"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Dell_xps"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Dell xps 13"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Dell_xps"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/xps12_9250"
+
+                />
+
+            <TextView
+                android:id="@+id/Dell_xps_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Dell_xps"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Lenovo_yoga_pro_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Lenovo yoga pro 3"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Lenovo_yoga_pro_3"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/lenovo_yoga_510"
+
+                />
+
+            <TextView
+                android:id="@+id/Lenovo_yoga_pro_3_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Lenovo_yoga_pro_3"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/Alienware_R2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="Alienware R2"
+                android:textColor="@color/bg_main"
+                android:paddingLeft="20dp"
+
+                android:textSize="20dp"
+                android:layout_weight="0.09" />
+
+            <ImageView
+                android:id="@+id/image_Alienware_R2"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:src="@drawable/alienware_15"
+
+                />
+
+            <TextView
+                android:id="@+id/Alienware_R2_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Alienware_R2"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
